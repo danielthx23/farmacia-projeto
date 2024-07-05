@@ -35,7 +35,7 @@ function FormularioCategoria() {
 
         if (id !== undefined) {
             try {
-                await atualizar(`/Categorias`, categoria, setCategoria)
+                await atualizar(`/categorias`, categoria, setCategoria)
 
                 alert('categoria atualizada, ae rapaiz')
                 retornar()
@@ -47,7 +47,7 @@ function FormularioCategoria() {
 
         } else {
             try {
-                await cadastrar(`/Categorias`, categoria, setCategoria)
+                await cadastrar(`/categorias`, categoria, setCategoria)
 
                 alert('categoria criada, ae rapaiz')
 
@@ -64,7 +64,7 @@ function FormularioCategoria() {
         }
 
         return (
-            <div className="container flex flex-col items-center justify-center mx-auto">
+            <div className="container flex flex-col items-center justify-center mx-auto my-16">
             <h1 className="text-4xl text-center my-8">
                 {id === undefined ? 'Cadastre um novo tema' : 'Editar tema'}
             </h1>
@@ -97,6 +97,13 @@ function FormularioCategoria() {
                     {id === undefined ? 'Cadastrar' : 'Editar'}
                 </button>
             </form>
+            <div className='grid grid-cols-4 p-16 gap-8'>
+            <img src='https://upload.wikimedia.org/wikipedia/en/thumb/7/73/Pikachu_artwork_for_Pok%C3%A9mon_Red_and_Blue.webp/220px-Pikachu_artwork_for_Pok%C3%A9mon_Red_and_Blue.webp.png' alt="" className='h-full object-contain' />
+            <img src='https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/019.png' alt="" className='h-auto object-contain' />
+            <img src='https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/283.png' alt="" className='object-contain' />
+            <img src='https://img.pokemondb.net/artwork/large/jirachi.jpg' alt="" className='object-contain' />
+            </div>
+
         </div>
         );
     }

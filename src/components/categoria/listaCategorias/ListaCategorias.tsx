@@ -3,7 +3,7 @@ import Categoria from '../../../models/Categoria';
 import { buscar } from '../../../service/Service';
 import CardCategoria from '../cardCategoria/CardCategoria';
 
-function ListaCategoria() {
+function ListaCategorias() {
     const [categorias, setCategorias] = useState<Categoria[]>([]);
 
     async function buscarCategorias() {
@@ -30,4 +30,4 @@ function ListaCategoria() {
     )
 }
 
-export default ListaCategoria
+export default ListaCategorias

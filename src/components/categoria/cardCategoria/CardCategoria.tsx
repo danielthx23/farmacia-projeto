@@ -12,10 +12,10 @@ function CardPostagem({ categoria }: CardPostagemProps) {
             <header className='py-2 px-6 bg-pink-800 text-white font-bold text-2xl'>{categoria.nome}</header>
             <p className='p-8 text-3xl bg-slate-200 h-full'>{categoria.descricao}</p>
             <div className="flex">
-                <Link to={`/editarTema/${categoria.id}`} className='w-full bg-green-200 hover:bg-green-400 flex items-center justify-center py-2'>
+                <Link to={`/editarCategoria/${categoria.id}`} className='w-full bg-green-200 hover:bg-green-400 flex items-center justify-center py-2'>
                     <button>Editar</button>
                 </Link>
-                <Link to={`/deletarTema/${categoria.id}`} className=' bg-red-400 hover:bg-red-700 w-full flex items-center justify-center'>
+                <Link to={`/deletarCategoria/${categoria.id}`} className=' bg-red-400 hover:bg-red-700 w-full flex items-center justify-center'>
                     <button>Deletar</button>
                 </Link>
             </div>

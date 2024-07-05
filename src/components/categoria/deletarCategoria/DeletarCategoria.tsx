@@ -30,7 +30,7 @@ function DeletarCategoria() {
 
     async function deletarCategoria() {
         try {
-            await deletar(`/Categorias/${id}`)
+            await deletar(`/categorias/${id}`)
 
             alert('Categoria apagado com sucesso')
 
@@ -41,7 +41,7 @@ function DeletarCategoria() {
         retornar()
     }
     return (
-        <div className='container w-1/3 mx-auto'>
+        <div className='container w-1/3 mx-auto my-16'>
             <h1 className='text-4xl text-center my-4'>Deletar Categoria</h1>
 
             <p className='text-center font-semibold mb-4'>Você tem certeza de que deseja apagar o Categoria a seguir?</p>
